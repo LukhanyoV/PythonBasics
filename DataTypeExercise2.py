@@ -1,5 +1,5 @@
 #declare list
-cars = [56,78,34,21,56,125,45,89,75,12,56]
+cars = [56,78,34,21,56,34,125,45,89,75,12,56]
 
 #find the smallest number
 smallNumber = min(cars)
@@ -13,8 +13,10 @@ print(smallNumber)
 #print largest number
 print(largeNumber)
 
-#find the sum of the two numbers
-sum = smallNumber + largeNumber
+#find the sum of all the numbers
+sum = 0
+for i in cars:
+    sum += i
 
 #print the sum of the two numbers
 print(sum)
